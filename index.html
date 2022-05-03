@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> 
     <title> MARI BIQUINIS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/slider.css">
+    <link rel="stylesheet" href="./style/styles.css">
+    <!--Owl-->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.css">
 </head>
 <body>
     <header>
@@ -17,58 +21,67 @@
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="./index.html">Ínicio</a></li>
-                <li><a href="/">Sobre</a></li>
-                <li><a href="/">Produtos</a></li>
-                <li><a href="https://www.instagram.com/biquinismari_/">Instagram</a></li>
+                <li><a href="#inicio">Ínicio</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produto">Produtos</a></li>
+                <li><a href="https://www.instagram.com/biquinismari_/" target="_blank">Instagram</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="slider">
-            <div class="slides">
-                <!--Radio Buttons-->
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!--Fim Radio Buttons-->
+    <div  class="wrapper">
+        <main>
+            <section id="inicio" class="module parallax parallax-1">
+                <h1>Moda Praia</h1>
+            </section>
+            <section class="module content">
+                <div class="container">
+                    <h2>Os melhores biquinis você encontra aqui !!</h2>
+                    <p>Celebrando o verão durante o ano inteiro. Vem seguir o sol com a gente ✨ de São Luís - MA para todo o Brasil • loja virtual</p>
+                </div>
+            </section>
+            <section id="sobre" class="module parallax parallax-2">
+                <h1>Sobre Nós</h1>
+            </section>
+            <section class="module content">
+                <div class="container">
+                    <h2>Um poucos sobre nós.</h2>
+                    <p>O objetivo da empresa é ser casual e atemporal, para qualquer tipo de corpos, logo possa libertar a deusa que habita em si.</p>
+                    <p></p>
+                </div>
+            </section>
+            <section id="produto" class="module parallax parallax-3">
+                <h1>Produtos</h1>
+            </section>
+            <section class="module content">
+                <div class="carrosel-biquinis">
+                    <h2>Alguns de nossos produtos: </h2>
+                    <div class="owl-carousel owl-theme">
+                          <div class="item">
+                            <img class="box-biquini" src="./img/biquini_verde3.jpeg" alt="Primeiro Slide">
+                          </div>
+                          <div class="item">
+                            <img class="box-biquini" src="./img/biquini_verde2.jpeg" alt="Segundo Slide">
+                          </div>
+                          <div class="item">
+                            <img class="box-biquini" src="./img/biquini_verde4.jpeg" alt="Terceiro Slide">
+                          </div>
+                          <div class="item">
+                            <img class="box-biquini" src="./img/biquini_vermelho4.jpeg" alt="Terceiro Slide">
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+        </main>
+        <a id="link-topo" href="#">&#9650;</a>
+    </div>
+    <footer id="rodape">
+    </footer>
 
-                <!--Slide imagens-->
-                <div class="slide first">
-                    <img src="./img/biquini_verde3.jpeg" alt="imagem1" />
-                </div>
-                <div class="slide">
-                    <img src="./img//biquini_vermelho4.jpeg" alt="imagem2" />
-                </div>
-                <div class="slide">
-                    <img src="./img/biquini_verde4.jpeg" alt="imagem3" />
-                </div>
-                <div class="slide">
-                    <img src="./img/biquini_verde2.jpeg" alt="imagem4" />
-                </div>
-                <!--Fim Slide imagens-->
-
-                <!--Navigation auto-->
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-            </div>
-
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-            </div>
-
-        </div>
-    </main>
-    <footer></footer>
     <script src="./js/mobile-navbar.js"></script>
-    <script src="./js/slider.js"></script>
+    <script src="https://kit.fontawesome.com/faf89e11ce.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
 </body>
 </html>

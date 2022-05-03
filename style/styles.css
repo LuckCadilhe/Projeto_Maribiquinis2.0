@@ -1,0 +1,118 @@
+:root{
+    --cor-branca: #fff;
+    --cor-preta: #000000;
+    --cor-laranja:#ffcb65;
+    --font-grande: 'Oleo Script', cursive;
+    --font-nav: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 900;
+    color: var(--cor-preta);
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background-color: var(--cor-laranja);
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+section.module p{
+    margin-bottom: 40px;
+}
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+section.module.content{
+    padding: 40px 0;
+    background:var(--cor-laranja);
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+section.module.parallax:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%);
+}
+section.module.parallax-1{
+    background-image: url(/img/bg3.jpeg);
+}
+
+section.module.parallax-2{
+    background-image: url(/img/bg.jpg);
+}
+section.module.parallax-3{
+    background-image: url(/img/bg6.jpeg);
+}
+
+section.module.parallax h1{
+    font-family: var(--font-grande);
+    color: var(--cor-laranja);
+    text-align: center;
+    font-size: 76px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+h1{
+    text-shadow: 0.1em 0.1em 0.2em var(--cor-preta);
+}
+
+#link-topo{
+    text-decoration: none;
+    color: var(--cor-preta);
+    background-color: #f0b94c;
+    border: 1px solid var(--cor-preta);
+    border-radius: 20px;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: 3px 3px 10px var(--cor-preta);
+}
+
+@media (max-width: 999px){
+    .container{
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
