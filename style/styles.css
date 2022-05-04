@@ -117,5 +117,10 @@ h1{
     }
     section.module.parallax:after{
         background-attachment: scroll;
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 8;
     }
 }
