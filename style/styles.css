@@ -115,4 +115,7 @@ h1{
         margin-left: 25px;
         margin-right: 25px;
     }
+    section.module.parallax{
+        width: 100%;
+    }
 }
