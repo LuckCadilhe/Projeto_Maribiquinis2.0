@@ -63,6 +63,7 @@ section.module.parallax{
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
+    -ms-background-size: cover;
 }
 
 section.module.parallax:after{
@@ -119,7 +120,7 @@ h1{
         content: "";
         height: 100%;
         width: 100%;
-        background-attachment: scroll;
+        background-attachment:absolute;
         position: absolute;
         z-index: 8;
     }
