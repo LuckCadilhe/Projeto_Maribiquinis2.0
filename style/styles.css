@@ -64,8 +64,6 @@ section.module.parallax{
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-.no-touchevents .box { color: red; }
-.touchevents .box { color: green; }
 
 section.module.parallax:after{
     content: "";
@@ -117,7 +115,7 @@ h1{
         margin-left: 25px;
         margin-right: 25px;
     }
-    section.module.parallax{
-        width: 100%;
+    section.module.parallax:after{
+        background-attachment: scroll;
     }
 }
